@@ -241,9 +241,15 @@
     </Compile>
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Agenda.cs" />
+    <Compile Include="Models\Bill.cs" />
+    <Compile Include="Models\Document.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Passing.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\PersonsXMLParser.cs" />
+    <Compile Include="Models\WorkOut.cs" />
+    <Compile Include="Models\workOutCommittee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
