@@ -13,6 +13,8 @@ namespace Data.gov.ua.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";
+            PersonsXMLParser parser = new PersonsXMLParser();
+            List<Bill> bills = parser.GetBills();
 
             return View();
         }
