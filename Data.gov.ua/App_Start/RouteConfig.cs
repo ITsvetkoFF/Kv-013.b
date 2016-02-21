@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
+using System.Web.Http.SelfHost;
 using System.Web.Mvc;
 using System.Web.Routing;
+using Owin;
 
 namespace Data.gov.ua
 {
@@ -12,6 +14,12 @@ namespace Data.gov.ua
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            var config = new HttpSelfHostConfiguration("http://localhost:50887");
+
+            HttpSelfHostServer server = new HttpSelfHostServer(config);
+
+            server.OpenAsync().Wait();
+
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapHttpRoute(
