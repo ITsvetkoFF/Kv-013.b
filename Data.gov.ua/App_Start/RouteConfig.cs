@@ -14,11 +14,11 @@ namespace Data.gov.ua
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
-            var config = new HttpSelfHostConfiguration("http://localhost:50887");
+            //var config = new HttpSelfHostConfiguration("http://localhost:50887");
 
-            HttpSelfHostServer server = new HttpSelfHostServer(config);
+            //HttpSelfHostServer server = new HttpSelfHostServer(config);
 
-            server.OpenAsync().Wait();
+            //server.OpenAsync().Wait();
 
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
