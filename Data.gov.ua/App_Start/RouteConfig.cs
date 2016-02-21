@@ -15,10 +15,10 @@ namespace Data.gov.ua
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapHttpRoute(
-    name: "API Default",
-    routeTemplate: "api/{controller}/{id}",
-    defaults: new { id = RouteParameter.Optional }
-);
+                name: "API Default",
+                routeTemplate: "api/{controller}/{id}",
+                defaults: new { id = RouteParameter.Optional }
+            );
 
             routes.MapRoute(
                 name: "Default",

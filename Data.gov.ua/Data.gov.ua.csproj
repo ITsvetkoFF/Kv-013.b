@@ -234,8 +234,8 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BillsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\PeopleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -247,7 +247,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Passing.cs" />
     <Compile Include="Models\Person.cs" />
-    <Compile Include="Models\PersonsXMLParser.cs" />
+    <Compile Include="Helpers\PersonsXMLParser.cs" />
     <Compile Include="Models\WorkOut.cs" />
     <Compile Include="Models\workOutCommittee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -312,7 +312,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\People\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

@@ -6,6 +6,7 @@ using System.Text;
 using System.Web.Http;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Data.gov.ua;
+using Data.gov.ua.Models;
 using Data.gov.ua.Controllers;
 
 namespace Data.gov.ua.Tests.Controllers
@@ -17,10 +18,10 @@ namespace Data.gov.ua.Tests.Controllers
         public void Get()
         {
             // Arrange
-            PeopleController controller = new PeopleController();
+            BillsController controller = new BillsController();
 
             // Act
-            IEnumerable<string> result = controller.Get();
+            IEnumerable<Bill> result = controller.Get();
 
             // Assert
             Assert.IsNotNull(result);
@@ -33,10 +34,10 @@ namespace Data.gov.ua.Tests.Controllers
         public void GetById()
         {
             // Arrange
-            PeopleController controller = new PeopleController();
+            BillsController controller = new BillsController();
 
             // Act
-            string result = controller.Get(5);
+            Bill result = controller.Get(5);
 
             // Assert
             Assert.AreEqual("value", result);
@@ -46,7 +47,7 @@ namespace Data.gov.ua.Tests.Controllers
         public void Post()
         {
             // Arrange
-            PeopleController controller = new PeopleController();
+            BillsController controller = new BillsController();
 
             // Act
             controller.Post("value");
@@ -58,7 +59,7 @@ namespace Data.gov.ua.Tests.Controllers
         public void Put()
         {
             // Arrange
-            PeopleController controller = new PeopleController();
+            BillsController controller = new BillsController();
 
             // Act
             controller.Put(5, "value");
@@ -70,7 +71,7 @@ namespace Data.gov.ua.Tests.Controllers
         public void Delete()
         {
             // Arrange
-            PeopleController controller = new PeopleController();
+            BillsController controller = new BillsController();
 
             // Act
             controller.Delete(5);
