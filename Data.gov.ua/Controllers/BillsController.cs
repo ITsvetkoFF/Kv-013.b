@@ -14,7 +14,7 @@ namespace Data.gov.ua.Controllers
         public IEnumerable<Bill> Get()
         {
             var parser = new PersonsXMLParser();
-            var listOfBills = parser.GetBills();
+            IEnumerable<Bill> listOfBills = parser.GetBills();
             return listOfBills;
         }
 

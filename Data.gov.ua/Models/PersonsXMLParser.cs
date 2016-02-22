@@ -12,9 +12,10 @@ namespace Data.gov.ua.Models
     {
         static string approot = HostingEnvironment.MapPath("~");
         public static XmlReader xmlReader = XmlReader.Create(approot + "App_Data\\bills.xml");
+
         public List<Bill> GetBills()
         {
-            xmlReader = XmlReader.Create(approot + "App_Data\\bills.xml");
+            XmlReader xmlReader = XmlReader.Create(approot + "App_Data\\bills.xml");
             List<Bill> bills = new List<Bill>();
             while (xmlReader.Read())
             {
